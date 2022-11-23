@@ -6,10 +6,64 @@
     width: 600px;
     height: 1060px;
     background-image: url(images/Background.jpg);
+    position: relative;
 }
 
 .shape {
     width: 600px;
     height: 1060px;
     background-image: url(image/shape.jpg);
+    position: relative;
+}
+
+.back {
+    left: 20px;
+    top: 32px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font_3788340_y1mybsab3ed/iconfont.woff2?t=1669188176729') format('woff2'),
+        url('./font_3788340_y1mybsab3ed/iconfont.woff?t=1669188176729') format('woff'),
+        url('./font_3788340_y1mybsab3ed/iconfont.tff2?t=1669188176729') format('truetype');
+
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 45px;
+    color: #89c5cf;
+}
+
+.pic {
+    padding-top: 22px;
+    height: 50.4px;
+    display: flex;
+        justify-content: space-between;
+}
+
+
+
+.tit {
+    left: 50%;
+    top: 30px;
+    width: 108px;
+    height: 34px;
+    position: absolute;
+    margin-left: -54px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    left: 231px;
+    top: 170px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    border-style: solid;
 }

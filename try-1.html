@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Top {
+        width: 100%;
+        height: 814px;
+        background-color: rgb(48, 144, 144);
+    }
+
+    .Detail {
+        height: 1324px;
+        background-color: rgb(236, 236, 225);
+    }
+
+    .Purchase {
+        height: 1741px;
+        background-color: blue;
+    }
+
+    .Recommend {
+        height: 615px;
+        background-color: red;
+    }
+
+    .Bottom {
+        height: 1013px;
+        background-color: black;
+    }
+
+    .Content {
+        width: 1200px;
+        height: 100%;
+        background-color: rgb(212, 210, 210);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .top_title {
+        height: 98px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/top.png);
+    }
+
+    .top_word {
+        height: 232px;
+        margin-top: 228px;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/The%20best%20pen%20is%20%20just%20LAMY.png);
+        background-size: cover;
+        z-index:100 ;
+    }
+
+    .top_title div {
+        font-size: 22px;
+        width: 174px;
+        height: 100%;
+        line-height: 98px;
+        text-align: center;
+    }
+
+    #top_box {
+        width: 230px;
+        background-color: red;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/img_lamylogo.png);
+        background-size: contain;
+    }
+
+    .det_wel {
+        width: 1149px;
+        height: 506px;
+        /* margin-top: 67px;
+        margin-left: 50px; */
+        margin: 67px 0px 158px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: white;
+    }
+
+    .det_kinds {
+        width: 100%;
+        height: 402px;
+        background-color: black;
+    }
+
+    .button {
+        width: 240px;
+        height: 64px;
+        background-color: black;
+        margin: 60px auto 0px;
+        font-size: 38px;
+        color: white;
+        text-align: center;
+    }
+
+    .det_wel_img {
+        width: 420px;
+        height: 100%;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E5%B1%82%205.png);
+    }
+
+    .det_wel_word {
+        width: 660px;
+        height: 348px;
+        background-color: white;
+        font-size: larger;
+    }
+
+    .det_wel_video {
+        width: 365px;
+        height: 240px;
+        position: absolute;
+        background-color: hotpink;
+        opacity:60% ;
+        left: 117px;
+        top: 330px;
+        text-align: center;
+    }
+
+    .det_kinds_title {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+        text-align: center;
+        font-size: larger;
+        position: absolute;
+    }
+
+    .det_kinds_word {
+        height: 252px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .p1{
+        height: 252px;
+        width: 33%;
+        background-color: white;
+        position: relative;
+        text-align: center;
+    }
+    .p2 {
+        height: 252px;
+        width: 33%;
+        background-color: white;
+        position: relative;
+        text-align: center;
+    }
+    .p3{
+        height: 252px;
+        width: 33%;
+        background-color: white;
+        position: relative;
+        text-align: center;
+    }
+
+    .pur_pen {
+        height: 389px;
+        background-color: green;
+        position: relative;
+    }
+
+    .pur_pen :nth-child(1) {
+        height: 217px;
+        background-color: aqua;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/red.png);
+    }
+
+    .pur_pen :nth-child(2) {
+        height: 172px;
+        background-color: yellow;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/huang.png)
+      }
+
+    .pur_pen :nth-child(3) {
+        height: 36px;
+        width: 91px;
+        background-color: black;
+        position: absolute;
+        top: 197px;
+        left: 40px;
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/wenzi.png);
+    }
+
+    .pur_card {
+        width: 812px;
+        height: 370px;
+        background-color: darkcyan;
+        margin: 60px auto;
+    }
+
+    .pur_showimg {
+        width: 883px;
+        height: 650px;
+        background-color: pink;
+        margin: 0 auto;
+    }
+
+    .pur_card_title {
+        height: 102px;
+        background-color: bisque;
+    }
+
+    .pur_card_box {
+        width: 814px;
+        height: 271px;
+        background-color: aqua;
+    }
+
+    .pur_card_box div {
+        width: 73px;
+        height: 73px;
+        background-color: black;
+        margin: 0 auto;
+        border-radius: 73px;
+    }
+
+    .pur_showimg_title {
+        height: 100px;
+        background-color: red;
+    }
+
+    .pur_showimg_box {
+        width: 881px;
+        height: 546px;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pur_showimg_cloum {
+        width: 250px;
+        height: 545px;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #pur_img1 {
+        height: 221px;
+        background-color: orange;
+    }
+
+    #pur_img2 {
+        height: 299px;
+        background-color: pink;
+    }
+
+    #pur_img3 {
+        height: 365px;
+        background-color: green;
+    }
+
+    #pur_img4 {
+        height: 170px;
+        background-color: black;
+    }
+
+    #pur_img5 {
+        height: 221px;
+        background-color: purple;
+    }
+
+    #pur_img6 {
+        height: 299px;
+        background-color: lawngreen;
+
+    }
+
+    .re_box {
+        height: 339px;
+        background-color:rgb(230, 9, 189);
+        display: flex;
+    }
+    .re_box1{
+        width: 882px; 
+        height: 435px;
+        background-color: bisque;
+        position: relative;
+        top: 89px;
+        left :180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .re_box1_1{
+        width: 374px; 
+        height: 393px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .re_box1_2{
+        width: 438px; 
+        height: 395px;
+        background-color: blue;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    .re_box1_1_1{
+        width: 375px; 
+        height:  120px; 
+        background-color: white;
+        position: relative;
+    }
+    .re_box1_1_2{
+        width: 375px; 
+        height:  120px; 
+        background-color: blue;
+        position: relative;
+    }
+    .re_box1_1_3{
+        width: 375px; 
+        height: 120px; 
+        background-color: rgb(157, 255, 0);
+        position: relative;
+    }
+    .re_box1_2_1{
+        width: 375px; 
+        height: 120px; 
+        background-color: rgb(255, 196, 0);
+        position: relative;
+    }
+    .re_box1_2_2{
+        width: 375px; 
+        height:  120px; 
+        background-color: rgb(255, 0, 8);
+        position: relative;
+        
+    }
+    .re_box1_2_3{
+        width: 375px; 
+        height: 120px; 
+        background-color: rgb(0, 187, 255);
+        position: relative;
+    }
+    .bo_box{
+        width: 1920px; 
+        height: 1010px; 
+        background-image: url(https://huangyazhen66.oss-cn-beijing.aliyuncs.com/1.png);
+        background-size: cover;
+    }
+    .bo_box1{
+        width: 585px; 
+        height: 107px; 
+        background-color: rgb(255, 238, 0);
+        position: relative;
+        top :220px ;
+        left: 300px;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    .bo_box1_1{
+        width: 110px; 
+        height: 107px; 
+        position: relative;
+    }
+    .bo_box1_2{
+        width: 365px; 
+        height: 107px;
+        position: relative;
+        text-align: center;
+    }
+    .bo_box1_3{
+        width: 110px; 
+        height: 107px; 
+        position: relative;
+    }
+    .bo_box2{
+        width: 1920px; 
+        height: 35px; 
+        background-color: rgb(53,53, 53);
+        position: relative;
+        top :760px ;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    .bo_box2_2{
+        width: 255px; 
+        position: relative;
+        color: white;
+        right: 375px;;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="Top">
+            <div class="Content">
+                <div class="top_title">
+                    <div>新品推荐</div>
+                    <div>购买产品</div>
+                    <div id="top_box"></div>
+                    <div>企业礼包</div>
+                    <div>品牌介绍</div>
+                </div>
+                <img src="https://huangyazhen66.oss-cn-beijing.aliyuncs.com/The%20best%20pen%20is%20%20just%20LAMY.png" >
+                <div class="top_word"></div>
+            </div>
+        </div>
+        <div class="Detail">
+            <div class="Content">
+                <div class="det_wel">
+                    <div class="det_wel_img"></div>
+                    <div class="det_wel_word">
+                        <h1>Welcome to Lamy</h1>
+                        <p>德国书写工具品牌LAMY始创人C•Josef Lamy于1930年在海德</br>堡创立了欧瑟斯墨水笔制造厂.1952年，崭露头角的LAMY 流线</br>型墨水笔，震撼问世, 彰显公司的创新敏锐触觉。1966年终于打</p>
+                        <p>造出令人耳目一新的现代经典之作-LAMY 2000系列。产品撮合</br>了聚碳酸酯与不锈钢材质，绝妙的配搭，使之从芸芸众生的书写</br>工具中脱颖而出，时至今日，依然在市场具有影响力。</p>
+                    </div>
+                    <div class="det_wel_video">
+                        <img src="https://huangyazhen66.oss-cn-beijing.aliyuncs.com/%E6%92%AD%E6%94%BE.png">
+                    </div>
+                </div>
+                <div class="det_kinds">
+                    <div class="det_kinds_title">
+                        <h1>LAMY各系列</h1>
+                    </div>
+                    <div class="det_kinds_word">
+                        <div class="p1">
+                            <h2>【恒星系列 墨水笔 】</h2>
+                            <p>LAMY 恒星系列延续了 LAMY </br>
+                                的时尚造型，打造出锦上添花的极致品质</br>
+                                。此系列全部均由氧化</br>
+                                独特的凹陷式笔握以及弹性铜线笔夹</br>
+                                富的颜色让 LAMY 恒星系列突破了传统</br>
+                                散发着无限的青春魅力。</p>
+                        </div>
+                        <div class="p2">
+                            <h2>【狩猎系列限量色墨水笔 】</h2>
+                            <p>色彩丰富，颜色亮丽，不仅是可以作为书</br>
+                                写工具，同样是很好的装饰品</br>
+                                宽大的笔夹设计，可随时夹在包带、牛仔裤、</br>
+                                T恤袖口上，让您感受创意方便的携带方式</br>
+                                笔身通体材质采用车用强力ABS材料</p>
+                        </div>
+                        <div class="p3">
+                            <h2>【喜悦系列美术笔 】</h2>
+                            <p>用以绘图、写艺术字、艺术签名</br>
+                                扁平状的笔尖设计，适合书写艺术字</br>
+                                立体感极佳.1、1.5、1.9三种笔尖可供选择</br>
+                                ，可书写粗细不等的立体字，让您随时</br>
+                                感受变化的乐趣复古的笔杆设计</br>
+                                ，经典又与众不同，显示出独特的欣赏品味</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <p>     了  解  详  情</p>
+                </div>
+            </div>
+        </div>
+        <div class="Purchase">
+            <div class="Content">
+                <div class="pur_pen">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="pur_card">
+                    <div class="pur_card_title"></div>
+                    <div class="pur_card_box">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="pur_showimg">
+                    <div class="pur_showimg_title"></div>
+                    <div class="pur_showimg_box">
+                        <div class="pur_showimg_cloum">
+                            <div id="pur_img1"></div>
+                            <div id="pur_img2"></div>
+                        </div>
+                        <div class="pur_showimg_cloum">
+                            <div id="pur_img3"></div>
+                            <div id="pur_img4"></div>
+                        </div>
+                        <div class="pur_showimg_cloum">
+                            <div id="pur_img5"></div>
+                            <div id="pur_img6"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">戳我速购> ></div>
+            </div>
+        </div>
+        <div class="Recommend">
+            <div class="Content">
+            <div class="re_box">
+                <div class="re_box1">
+                   <div class="re_box1_1">
+                    <div class="re_box1_1_1"></div> 
+                    <div class="re_box1_1_2"></div> 
+                    <div class="re_box1_1_3"></div> 
+                   </div>
+                   <div class="re_box1_2">
+                    <div class="re_box1_2_1">You make millions of decisions that is
+                        mean nothing，and then one day your
+                        order takes out life.</div>
+                    <div class="re_box1_2_2">It's sad when you realize you aren't
+                        is as  important  to someone as you 
+                        thought you were.</div>
+                    <div class="re_box1_2_3">Love is unequal, so don't count how
+                        much one contributes, and which is
+                        more active.</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="Bottom">
+        <div class="Content">
+            <div class="button">新品推荐> ></div>
+            <div class="bo_box">
+                <div class="bo_box1">
+                    <div class="bo_box1_1">
+                        <P>CUTE</br>
+                            useful</P>
+                    </div>
+                    <div class="bo_box1_2">
+                        <h1>LAMY</h1>
+                    </div>
+                    <div class="bo_box1_3">
+                        <P>GOOD</br>
+                            SIMPLE</P>
+                    </div>
+                </div>
+                <div class="bo_box2">
+                    <div class="bo_box2_2">© 凌美中国 2015 版权所有 不得转载</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
