@@ -1,0 +1,15 @@
+* {
+    margin: auto;
+}
+
+.background {
+    width: 600px;
+    height: 1060px;
+    background-image: url(images/Background.jpg);
+}
+
+.shape {
+    width: 600px;
+    height: 1060px;
+    background-image: url(image/shape.jpg);
+}
