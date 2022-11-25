@@ -41,35 +41,34 @@
 }
 
 .pic {
-<<<<<<< HEAD
+
     padding-top: 30px;
     height: 50.4px;
     display: flex;
     justify-content: space-between;
-=======
+
     padding-top: 22px;
     height: 50.4px;
     display: flex;
-        justify-content: space-between;
->>>>>>> 5e44a91a1307bd4dc629c4a1b1cd960c42d578f0
+    justify-content: space-between;
+
 }
 
 
 
 .tit {
     left: 50%;
-<<<<<<< HEAD
+
     top: 40px;
-=======
+
     top: 30px;
->>>>>>> 5e44a91a1307bd4dc629c4a1b1cd960c42d578f0
+
     width: 108px;
     height: 34px;
     position: absolute;
     margin-left: -54px;
 }
 
-<<<<<<< HEAD
 .pho {
 
     top: 97.6px;
@@ -106,15 +105,16 @@
     height: 27px;
     left: 41px;
 
-    position:absolute;
+    position: absolute;
 
 }
 
 .pp {
-        font-size: 20px;
-            color: #ffffff;
+    font-size: 20px;
+    color: #ffffff;
 
 }
+
 .input {
     width: 444px;
     height: 258px;
@@ -207,14 +207,8 @@
     color: #3dfcb4;
     position: absolute;
     left: 220px;
-=======
-.photo {
-    width: 150px;
-    height: 150px;
-    left: 231px;
-    top: 170px;
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    border-style: solid;
->>>>>>> 5e44a91a1307bd4dc629c4a1b1cd960c42d578f0
+}
+
+.sign:hover {
+    color: pink;
 }
